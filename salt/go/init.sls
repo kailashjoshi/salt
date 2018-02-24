@@ -11,6 +11,7 @@ go_lang_env_variables:
   file.managed:
     - name: /etc/profile.d/go.sh
     - source: salt://go/files/go.sh
+    - replace: False
 
 go_lang_env_source:
   cmd.run:
