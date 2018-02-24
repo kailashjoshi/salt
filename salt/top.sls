@@ -4,3 +4,6 @@ base:
     - users
     - go
     - git
+
+  'web-*':
+    - apache
