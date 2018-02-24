@@ -10,4 +10,4 @@ start_apache:
 welcome_page:
   file.managed:
     - name: /var/www/html/index.html
-    - source: salt://files/index.html
+    - source: salt://apache/files/index.html
