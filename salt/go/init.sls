@@ -9,5 +9,5 @@ extract_go_1.10:
 
 go_lang_env_variables:
   file.managed:
-    - name: /etc/profile.d/
+    - name: /etc/profile.d/go.sh
     - source: salt://go/files/go.sh
