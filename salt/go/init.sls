@@ -5,7 +5,6 @@ extract_go_1.10:
     - source_hash: sha1=693e2dfd99ef2d608b41c450efd9d277bf2a7f2f
     - user: root
     - group: root
-    - if_missing: /usr/local/
 
 go_lang_env_variables:
   file.managed:
