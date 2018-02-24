@@ -1,8 +1,9 @@
 essential-packages:
   pkg.installed:
-    - bash
-    - git
-    - nodejs
-    - zsh
-    - ntp
-    - curl
+    - pkgs:
+      - bash
+      - git
+      - nodejs
+      - zsh
+      - ntp
+      - curl
