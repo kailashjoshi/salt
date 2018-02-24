@@ -20,6 +20,6 @@ go_lang_env_source:
 {% if not salt['file.directory_exists' ]('/usr/local/go') %}
 go_symlink:
   file.symlink:
-    - name: /opt/go
-    - target: /usr/local/go
+    - name: /usr/local/go
+    - target: /opt/go
 {% endif %}
