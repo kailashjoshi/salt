@@ -1,3 +1,5 @@
+include:
+  - requirements.epel
 essential-packages:
   pkg.installed:
     - pkgs:
