@@ -1,3 +1,5 @@
 base:
   '*':
     - users
+  'master.*':
+    - monitor
