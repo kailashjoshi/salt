@@ -8,3 +8,5 @@ install_java8:
   cmd.run:
     - name: yum -y install /tmp/jdk-8u131-linux-x64.rpm
     - unless: java -version
+    - onchanges:
+      - cmd: rm -rf /tmp/jdk-8u131-linux-x64.rpm
