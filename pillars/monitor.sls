@@ -11,4 +11,6 @@ beacons:
       recurse: True
       exclude:
         - /srv/conflictrepo/.git
+        - /srv/conflictrepo/**/*.swp:
+            regex: True
     coalesce: True
