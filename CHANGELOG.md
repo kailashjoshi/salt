@@ -1,0 +1,2 @@
+* CHANGE LOGS
+- Beacons added
