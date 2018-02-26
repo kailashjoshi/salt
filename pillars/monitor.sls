@@ -6,6 +6,7 @@ beacons:
         - create
         - close_write
         - modify
+        - delete
         - delete_self
       recurse: True
       exclude:
