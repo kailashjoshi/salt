@@ -18,3 +18,5 @@ extract_podium:
         - user
         - group
         - mode
+  cmd.run:
+    - name: find /opt/podium -name "core-env.properties" -print0 | xargs -0 rm -rf
