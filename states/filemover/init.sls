@@ -7,17 +7,14 @@ extract_podium:
     - group: s3mw
     - overwrite: True
 
-podiumwebapps:
-  /opt/podium:
-    file.directory:
-      - user: tmwadm
-      - group: s3mw
-      - dir_mode: 755
-      - file_mode: 774
-      - exclude_pat: core-env.properties
-      - recurse:
+  file.directory:
+    - name: /opt/podium
+    - user: tmwadm
+    - group: s3mw
+    - dir_mode: 755
+    - file_mode: 774
+    - exclude_pat: core-env.properties
+    - recurse:
         - user
         - group
         - mode
-      - require:
-          - archive: extract_podium
