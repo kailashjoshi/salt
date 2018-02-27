@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 if [[ `git status --porcelain` ]]; then
-salt -L "master.local" beacons.disable
+  salt-call beacons.disable
   git reset --hard origin
   git clean -f
-sleep 3
-salt -L "master.local" beacons.enable
+  sleep 3
+  salt-call beacons.enable
 else
   echo "no change"
 fi
