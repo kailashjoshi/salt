@@ -13,7 +13,6 @@ extract_podium:
     - group: s3mw
     - dir_mode: 755
     - file_mode: 774
-    - clean: True
     - exclude_pat: core-env.properties
     - recurse:
         - user
