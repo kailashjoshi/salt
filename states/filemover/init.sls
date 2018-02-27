@@ -9,7 +9,7 @@ extract_podium:
 
 podiumwebapps:
   file.copy:
-      - name: /opt
+      - name: /opt/podium
       - source: /tmp/podium
       - user: tmwadm
       - group: s3mw
