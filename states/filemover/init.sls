@@ -8,11 +8,12 @@ extract_podium:
     - overwrite: True
 
   file.directory:
-    - name: /opt/podium
+    - name: /opt
     - user: tmwadm
     - group: s3mw
     - dir_mode: 755
     - file_mode: 774
+    - clean: True
     - exclude_pat: core-env.properties
     - recurse:
         - user
