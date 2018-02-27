@@ -27,7 +27,7 @@ extract_podium1:
 
   file.recurse:
     - name: /opt/podium1
-    - source: /tmp/podium
+    - source: file:///tmp/podium
     - user: tmwadm
     - group: s3mw
     - dir_mode: 755
