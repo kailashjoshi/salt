@@ -16,9 +16,7 @@ change_permission:
         - user
         - group
         - mode
-    - require:
-        - archive: extract_podium
   cmd.run:
     - name: find /opt/podium -name "core-env.properties" -print0 | xargs -0 rm -rf
-    - require:
+    - onchanges:
         - archive: extract_podium
