@@ -3,9 +3,9 @@ extract_podium:
     - name: /opt
     - source: http://192.168.209.130:8081/repository/raw-kj/podium/45/podium.tar.gz
     - source_hash: sha1=237bde7f818c5db26638e8c5b9af23bf224d1b12
-    - template: jinja
-    - overwrite: True
+    - if_missing: /opt/podium
 
+change_permission:
   file.directory:
     - name: /opt/podium
     - user: tmwadm
@@ -16,5 +16,9 @@ extract_podium:
         - user
         - group
         - mode
+    - require:
+        - archive: extract_podium
   cmd.run:
     - name: find /opt/podium -name "core-env.properties" -print0 | xargs -0 rm -rf
+    - require:
+        - archive: extract_podium
